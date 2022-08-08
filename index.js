@@ -22,4 +22,7 @@ bot.on('message', async msg => {
     if (text === '/info') {
         await bot.sendMessage(chatId, `Тебя зовут ${msg.from.first_name} ${msg.from.last_name}`);
     }
+    if (text === '/vacations') {
+        await bot.sendDocument(chatId, `./documents/vacations.pdf`);
+    }
 })
