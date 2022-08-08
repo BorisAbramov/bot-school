@@ -30,4 +30,7 @@ bot.on('message', async msg => {
     if (text === '/shedule') {
         await bot.sendMessage(chatId, `Расписание уже составляется, осталось совсем чуть-чуть;)`);
     }
+    else {
+        await bot.sendMessage(chatId, `Эта информация мне пока неизвестна, прошу прощения;(`);
+    }
 })
