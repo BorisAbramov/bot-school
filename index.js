@@ -6,6 +6,7 @@ const bot = new TelegramApi(token, {polling: true});
 bot.setMyCommands([
     {command: '/start', description: 'Начальное приветствие'},
     {command: '/info', description: 'Получить информацию о пользователе'},
+    {command: '/vacations', description: 'Регламентирование образовательного процесса на 2022-2023 учебный год'},
     //{command: '/game', description: 'Игра угадай цифру'},
 ])
 
