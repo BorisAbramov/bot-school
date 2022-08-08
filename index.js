@@ -7,6 +7,7 @@ bot.setMyCommands([
     {command: '/start', description: 'Начальное приветствие'},
     {command: '/info', description: 'Получить информацию о пользователе'},
     {command: '/vacations', description: 'Регламентирование образовательного процесса на 2022-2023 учебный год'},
+    {command: '/shedule', description: 'Расписание уроков'},
     //{command: '/game', description: 'Игра угадай цифру'},
 ])
 
@@ -25,5 +26,8 @@ bot.on('message', async msg => {
     }
     if (text === '/vacations') {
         await bot.sendDocument(chatId, `./documents/vacations.pdf`);
+    }
+    if (text === '/shedule') {
+        await bot.sendMessage(chatId, `Расписание уже составляется, осталось совсем чуть-чуть;)`);
     }
 })
